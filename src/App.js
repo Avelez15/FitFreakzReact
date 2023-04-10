@@ -1,6 +1,8 @@
 import './styles.css';
 import{Container,Navbar, NavbarBrand} from 'reactstrap';
-import FitFreakzLogo from './app/assets/img/FitFreakzLogo.jpg'
+import FitFreakzLogo from './app/assets/img/FitFreakzLogo.jpg';
+import Footer from './components/Footer';
+import TrainersList from './features/Trainers/TrainersList';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           </Container>
         </Navbar>
       </header>
+      <TrainersList/>
+      <Footer/>
     </div>
   );
 }
