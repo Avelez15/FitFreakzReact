@@ -1,10 +1,11 @@
 import { Card,CardImg,CardImgOverlay,CardTitle } from "reactstrap";
+import '../../index.css'
 
 
 
 const TrainerCard = (props) =>{
     const titleStyle = {
-        fontFamily: 'Arial',
+        fontFamily: 'Proxima Nova',
         fontSize: '24px',
         fontWeight: 'bold',
         color: 'red',
