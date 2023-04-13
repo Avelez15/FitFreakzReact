@@ -1,8 +1,11 @@
 import { TRAINERS } from "../../app/shared/TRAINERS";
 import {Col,Row} from 'reactstrap';
 import TrainerCard from "./TrainerCard";
+import { selectAllTrainers } from "./trainerSlice";
 
 const TrainersList = () => {
+    const trainers = selectAllTrainers();
+
     return(
         <Row className="ms-auto">
             {TRAINERS.map((trainer) => {
