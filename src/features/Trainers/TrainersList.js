@@ -8,7 +8,7 @@ const TrainersList = () => {
 
     return(
         <Row className="ms-auto">
-            {TRAINERS.map((trainer) => {
+            {trainers.map((trainer) => {
                 return (
                     <Col md='5' className='m-4' key={trainer.id}>
                         <TrainerCard trainer={trainer} />
