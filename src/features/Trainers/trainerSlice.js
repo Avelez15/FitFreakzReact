@@ -4,6 +4,6 @@ export const selectAllTrainers = () => {
     return TRAINERS;
 }
 
-export const selectRandomTrainer = () => {
-    return TRAINERS[Math.floor(TRAINERS.length*Math.random())];
-};
+export const selectTrainerById = (id) => {
+    return TRAINERS.find((trainers) => trainers.id === id);
+}

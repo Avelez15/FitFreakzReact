@@ -1,25 +1,20 @@
-import { Container, Row, Col, Button } from 'reactstrap';
+import { useState } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import TrainerDetail from '../features/Trainers/TrainerDetail';
 import TrainersList from '../features/Trainers/TrainersList';
-import { selectRandomTrainer } from '../features/Trainers/trainerSlice';
+import { selectTrainerById } from '../features/Trainers/trainerSlice';
 
 
 const TrainersDirectoryPage = () => {
-    let selectedTrainer = selectRandomTrainer();
-
-    const toggleTrainer = () => {
-        selectedTrainer = selectRandomTrainer();
-    }
-
+    const [trainerId, setTrainerId] = useState(0);
+    const selectedTrainer = selectTrainerById(trainerId);
 
     return (
         <Container>
-            <Button onClick={() => toggleTrainer()}>
-                Select Random Trainer
-            </Button>
+
             <Row>
                 <Col sm='5' md='7'>
-                    <TrainersList />
+                    <TrainersList setTrainerId={setTrainerId} />
                 </Col>
                 <Col sm='7' md='5'>
                     <TrainerDetail trainer={selectedTrainer} />
