@@ -6,13 +6,12 @@ import FitFreakzLogo from '../app/assets/img/FitFreakzLogo.jpg'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+
   return (
     <Navbar dark color='primary' sticky='top' expand='md'>
       <NavbarBrand className='ms-5' href='/'>
         <img src={FitFreakzLogo} alt='FitFreakz logo' className='float-start' />
-        <h1 className='mt-1'>FitFreakz</h1>
       </NavbarBrand>
-
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className='ms-auto' navbar>
@@ -40,6 +39,6 @@ const Header = () => {
       </Collapse>
     </Navbar>
   );
-}
+};
 
 export default Header;
