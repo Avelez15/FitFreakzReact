@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import '../index.css'
+import '../styles.css'
 
 
 const Footer = () => {
@@ -15,19 +15,27 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Links</h5>
-                        <ul className='list-unstyled'>
-                            <li>
-                                <p>Home</p>
+                        <h5 style={{ alignSelf: 'center' }}>Links</h5>
+                        <ul className='nav-list'>
+                            <li className='nav-item'>
+                                <Link className='nav-link' to='/'>
+                                    Home
+                                </Link>
                             </li>
-                            <li>
-                                <p>Directory</p>
+                            <li className='nav-item'>
+                                <Link className='nav-link' to='/directory'>
+                                    Directory
+                                </Link>
                             </li>
-                            <li>
-                                <p>About</p>
+                            <li className='nav-item'>
+                                <Link className='nav-link' to='/about'>
+                                    About
+                                </Link>
                             </li>
-                            <li>
-                                <p>Contact</p>
+                            <li className='nav-item'>
+                                <Link className='nav-link' to='/contact'>
+                                    Contact
+                                </Link>
                             </li>
                         </ul>
                     </Col>

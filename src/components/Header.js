@@ -6,9 +6,18 @@ import FitFreakzLogo from '../app/assets/img/FitFreakzLogo.jpg'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const headerStyle = {
+    backgroundColor: '#006699',
+    backgroundImage: 'linear-gradient(to top, #B82E1F, #000000, white)',
+    padding: '10px',
+    fontWeight: 'bold',
+    fontSize: '24px',
+    color: 'white',
+  }
+
 
   return (
-    <Navbar dark color='primary' sticky='top' expand='md'>
+    <Navbar dark color='danger' sticky='top' expand='md' style={headerStyle}>
       <NavbarBrand className='ms-5' href='/'>
         <img src={FitFreakzLogo} alt='FitFreakz logo' className='float-start' />
       </NavbarBrand>
@@ -40,5 +49,6 @@ const Header = () => {
     </Navbar>
   );
 };
+
 
 export default Header;
