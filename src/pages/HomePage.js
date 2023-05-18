@@ -9,4 +9,10 @@ const HomePage = () => {
     )
 };
 
+const customCard {
+    display: ,
+    justify-content: center,
+        align - items: center;
+  }
+
 export default HomePage;

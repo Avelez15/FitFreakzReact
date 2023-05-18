@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <Navbar dark color='danger' sticky='top' expand='md' style={headerStyle}>
       <NavbarBrand className='ms-5' href='/'>
-        <img src={FitFreakzLogo} alt='FitFreakz logo' className='float-start' />
+        <img src={FitFreakzLogo} alt='FitFreakz logo' className='float-start' style={{ width: 150 }} />
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
