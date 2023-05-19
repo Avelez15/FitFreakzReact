@@ -8,7 +8,8 @@ const Footer = () => {
     const footerStyle = {
         fontFamily: 'Proxima Nova',
         fontWeight: 'bold',
-        color: '#A9A9A9',
+        color: '#A9A9A9'
+
     }
     return (
         <footer className='site-footer' style={footerStyle}>

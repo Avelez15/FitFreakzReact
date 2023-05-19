@@ -2,7 +2,7 @@ import { Col, Row, Card, CardBody, CardText, CardImg, CardTitle } from 'reactstr
 import DisplayCard from './DisplayCard';
 import { selectFeaturedTrainer } from '../Trainers/trainerSlice';
 import { selectFeaturedPromotion } from '../promotions/promotionsSlice';
-import guyFlexing from '../../app/assets/img/guyFlexing.jpg';
+import guyFlexing from '../../app/assets/img/guyFlexing.png';
 import '../../styles.css'
 
 const DisplayList = () => {
@@ -10,7 +10,7 @@ const DisplayList = () => {
 
     return (
         <>
-            <Row>
+            <Row className="justify-content-center">
                 <Col md={11}>
                     <Card className='custom-card'>
                         <CardImg src={guyFlexing} alt='a man flexing' />
@@ -31,5 +31,6 @@ const DisplayList = () => {
         </>
     );
 };
+
 
 export default DisplayList;

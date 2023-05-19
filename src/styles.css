@@ -13,6 +13,10 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+li {
+    color: #333;
+}
+
 #fitFreakNavbar {
     background: solid;
     font-size: 20px;

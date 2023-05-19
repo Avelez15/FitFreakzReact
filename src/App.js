@@ -1,12 +1,12 @@
 import './styles.css';
 import { Container, Navbar, NavbarBrand } from 'reactstrap';
-import FitFreakzLogo from './app/assets/img/FitFreakzLogo.jpg';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TrainersDirectoryPage from './pages/TrainersDirectoryPage';
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
+import AboutUsPage from './pages/AboutUsPage';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='directory' element={<TrainersDirectoryPage />} />
+        <Route path='about' element={<AboutUsPage />} />
       </Routes>
       <Footer />
     </div>
