@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import TrainerDetail from '../features/Trainers/TrainerDetail';
 import TrainersList from '../features/Trainers/TrainersList';
 import { selectTrainerById } from '../features/Trainers/trainerSlice';
+import SubHeader from '../components/SubHeader';
 
 
 const TrainersDirectoryPage = () => {
@@ -11,7 +12,7 @@ const TrainersDirectoryPage = () => {
 
     return (
         <Container>
-
+            <SubHeader current='Directory' />
             <Row>
                 <Col sm='5' md='7'>
                     <TrainersList setTrainerId={setTrainerId} />
